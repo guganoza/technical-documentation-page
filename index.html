@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>technical documentation page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="main-doc">
+        <section class="main-section">
+        <h1 id="Java Documentation">
+            Java Documentation
+        </h1>
+        <p>
+            Whether you are working on a new cutting edge app
+             or simply ramping up on new technology, Java do
+             cumentation has all the information you need to make
+              your project a smashing success. Use the rich set
+               of code samples, tutorials, developer guides, API documentation,
+                and more to quickly develop your prototype and scale it up
+                 to a real world application.
+            
+
+
+
+        </p>
+    </section>
+    <section class="main-section">
+        <h1 id = "Java Platform, Standard Edition (Java SE)">
+            Java Platform, Standard Edition (Java SE)
+        </h1>
+        <p>
+            Java SE lets you develop and
+             deploy Java applications on desktops
+              and servers. Java SE 
+             and component technologies
+             offer the rich user interface,
+              performance, versatility, portability,
+               and security that today's applications
+                require.
+        </p>
+        <h3>
+            Java SE Documentation
+        </h3>
+        <ul>
+            <li>Java SE Licensing Information<br>Product License, Commercial Features and Terms, Java SE Licensing Information User Manual
+                 (LIUM), Readme Files, Release Notes,
+                  and information on Data Collection</li>
+            <li>Java SE Technical Documentation</li>
+            <li>Java SE Components Documentation</li>
+        </ul>
+    </section>
+    <section class="main-section">
+        <h1 id="Java Embedded">
+            Java Embedded
+        </h1>
+        <p>
+            Java ME Embedded is designed for resource-constrained devices like wireless modules for M2M, industrial control, smart-grid infrastructure, environmental sensors and tracking, and more.<br><br>
+
+            Java ME Embedded documentation<br><br>
+
+            Oracle Java SE Embedded delivers a secure, optimized runtime environment ideal for network-based devices.<br><br>
+
+            Oracle Java SE Embedded and JDK for ARM documentation<br><br>
+
+            Java Card technology provides a secure environment for applications that run on smart cards and other devices
+             with very limited memory and processing capabilities.<br><br>
+
+            Java Card documentation<br><br>
+        </p>
+        <h1 id="Java Platform, Enterprise Edition (Java EE)">
+            Java Platform, Enterprise Edition (Java EE)
+        </h1>
+        <p>
+            Java EE provides an API and runtime environment for developing and running large, multi-tiered, reliable,
+            and secure enterprise applications that are portable and scalable and that integrate easily with
+            legacy applications and data.<br><br>
+            Java EE documentation
+        </p>
+    </section>
+    <section class="main-section">
+        <h1 id="JS Hello world">
+            JS Hello world
+        </h1>
+        <p>
+            To get started with writing JavaScript, open the Scratchpad and write your first "Hello world" JavaScript code: 
+        </p>
+        <code>function greetMe(yourName) { alert("Hello " + yourName); }<br>
+            greetMe("World");</code>
+            <p>
+                Select the code in the pad and hit Ctrl+R to watch it unfold in your browser! 
+            </p>
+    </section>
+    <section class="main-section">
+        <h1 id="Variables">
+            Variables
+        </h1>
+        <p> You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.<br>
+
+            A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).<br>
+            
+            You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name. </p>
+    statement_4_runs_if_condition_is_false; 
+    }</section>
+    <section class="main-section">
+        <h1 id="Declaring variables">
+            Declaring variables
+        </h1>
+        <p>You can declare a variable in three ways:<br>
+
+            With the keyword var. For example, </p>
+        <code>var x = 42.</code>
+        <p>
+            This syntax can be used to declare both local and global variables.<br>
+
+            By simply assigning it a value. For example, 
+        </p>
+        <code>let y = 13.</code>
+        <p>This syntax can be used to declare a block scope local variable. See Variable scope below. </p>
+    </section>
+    <section class="main-section">
+        <h1 id="Variable scope">
+            Variable scope
+        </h1>
+        <p> When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.<br>
+
+            JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement. 
+        </p>
+        <code>if (true) { var x = 5; } console.log(x); // 5</code>
+        <p>This behavior changes, when using the let declaration introduced in ECMAScript 2015. </p>
+        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is not
+            defined
+        </code>
+    </section>
+    <section class="main-section">
+        <h1 id="Global variables">
+            Global variables
+        </h1>
+        <p>
+
+            Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.<br>
+            
+            Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.
+        </p>
+
+    </section>
+    <section class="main-section">
+        <h1 id="Constants">
+            Constants
+        </h1>
+        <p>
+            You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters. 
+        </p>
+        <code>const PI = 3.14;</code>
+        <p>
+            A constant cannot change value through assignment or be re-declared while the script is running. It has to be initialized to a value.<br>
+
+            The scope rules for constants are the same as those for let block scope variables. If the const keyword is omitted, the identifier is assumed to represent a variable.<br>
+            
+            You cannot declare a constant with the same name as a function or variable in the same scope. For example:
+        </p>
+        <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS WILL
+            CAUSE AN ERROR ALSO function f() { const g = 5; var g; //statements
+            }</code>
+            <p>However, object attributes are not protected, so the following statement is executed without problems. </p>
+            <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key = "otherValue";</code>
+    </section>
+    <section class="main-section">
+        <h1 id="Data types">Data types</h1>
+        <p>The latest ECMAScript standard defines seven data types:</p>
+        <ul>
+            <li>Six data types that are primitives:</li>
+            <li>Boolean. true and false</li>
+            <li>null. A special keyword denoting a null value. Because JavaScript is case-sensitive, null is not the same as Null, NULL, or any other variant. </li>
+            <li>undefined. A top-level property whose value is undefined.</li>
+            <li>Number. 42 or 3.14159.</li>
+            <li>String. "Howdy"</li>
+            <li>Symbol (new in ECMAScript 2015). A data type whose instances are unique and immutable. </li>
+            <li>and Object </li>
+        </ul>
+        <p>Although these data types are a relatively small amount,
+             they enable you to perform useful functions with your applications.
+              Objects and functions are the other fundamental elements in the language.
+             You can think of objects as named containers for values, and functions as procedures
+              that your application can perform.
+        </p>
+    </section>
+    <section class="main-section">
+        <h1 id="if...else statement">
+            if...else statement
+        </h1>
+        <p>Use the if statement to execute a statement if a logical condition is true.
+             Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:
+        </p>
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
+        <p>
+            condition can be any expression that evaluates to true or false. See Boolean for an explanation of what evaluates to true and false. If condition evaluates to true, statement_1 is executed; otherwise, statement_2 is executed. statement_1 and statement_2 can be any statement, including further nested if statements.<br><br>
+
+You may also compound the statements using else if to have multiple conditions tested in sequence, as follows: 
+        </p>
+        <code>if (condition_1) { statement_1; } else if (condition_2) { statement_2;
+        } else if (condition_n) { statement_n; } else { statement_last; }</code>
+        <p>In the case of multiple conditions only the first logical condition which evaluates to true will be executed. To execute multiple statements, group them within a block statement ({ ... }) . In general, it's good practice to always use block statements, especially when nesting if statements: </p>
+        <code>if (condition) { statement_1_runs_if_condition_is_true;<br>
+            statement_2_runs_if_condition_is_true; } else {<br>
+            statement_3_runs_if_condition_is_false;<br>
+            statement_4_runs_if_condition_is_false; <br>}</code>
+        <p>It is advisable to not use simple assignments in a conditional expression, because the assignment can be confused with equality when glancing over the code. For example, do not use the following code: </p>
+        <code>if (x = y) { /* statements here */ }</code>
+        <p>If you need to use an assignment in a conditional expression, a common practice is to put additional parentheses around the assignment. For example: </p>
+        <code>if ((x = y)) { /* statements here */ }</code>
+    </section>
+    </main>
+    <nav id="navbar">
+        <header> Java and JavaScript</header>
+        <ul>
+            <li><a href="#Java Documentation">Java Documentation</a></li>
+            <li><a href="#Java Platform, Standard Edition (Java SE)">Java Platform, Standard Edition (Java SE)</a></li>
+            <li><a href="#Java Embedded">Java Embedded</a></li>
+            <li><a href="#Java Platform, Enterprise Edition (Java EE)">Java Platform, Enterprise Edition (Java EE)</a></li>
+            <li><a href="#JS Hello world">JS Hello world</a></li>
+            <li><a href="#Variables">Variables</a></li>
+            <li><a href="#Declaring variables">Declaring variables</a></li>
+            <li><a href="#Variable scope">Variable scope</a></li>
+            <li><a href="#Global variables">"Global variables</a></li>
+            <li><a href="#Constants">Constants</a></li>
+            <li><a href="#Data types">Data types</a></li>
+            <li><a href="#if...else statement">if...else statement</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
